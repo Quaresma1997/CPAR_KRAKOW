@@ -1,0 +1,30 @@
+Compile ex1:
+
+/usr/lib64/openmpi/bin/mpicc ex1.c -o ex1 -lm
+/usr/lib64/openmpi/bin/mpirun -np 6 --display-map ./ex1
+
+Compile ex2:
+
+gcc -o ex2 -lpthread  ex2.c -lm
+./ex2 100
+
+Compile ex3:
+
+/usr/lib64/openmpi/bin/mpicc ex3.c -o ex3 -lm
+/usr/lib64/openmpi/bin/mpirun -np 6 --display-map ./ex3
+
+Compile ex4:
+
+gcc -o ex4 -fopenmp ex4.c -lm
+./ex4 1000
+
+Compile ex5:
+
+gcc -o ex5 -fopenmp ex5.c -lm
+./ex5
+
+Compile ex6:
+
+gcc -o ex6 -fopenmp ex6.c -lm
+./ex6 1000
+
